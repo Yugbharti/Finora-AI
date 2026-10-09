@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix frontend ci && npm --prefix dashboard ci && npm --prefix backend ci",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:dashboard": "npm --prefix dashboard run build",
+    "start:frontend": "cross-env PORT=3000 npm --prefix frontend start",
+    "start:dashboard": "cross-env PORT=3003 npm --prefix dashboard start",
+    "start:backend": "npm --prefix backend run start",
+    "start:all": "concurrently --names frontend,dashboard,backend -c blue,green,yellow \"npm run start:frontend\" \"npm run start:dashboard\" \"npm run start:backend\""
+  },
+  "dependencies": {
+    "@types/passport-local": "^1.0.38",
+    "passport": "^0.7.0",
+    "session": "^0.1.0",
+    "concurrently": "^9.2.0",
+    "cross-env": "^10.0.0"
+  }
+}

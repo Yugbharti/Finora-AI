@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-link {
+  margin-left: 40px;
+}
+
+* {
+  font-family: serif;
+}
+
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+  height: 500px;
+  padding-top: 0.2rem;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 150px 20px;
+}
+
+#supportHero input {
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 2px;
+  border: none;
+}
+
+#searchWrapper a {
+  margin-right: 25px;
+  font-size: 17px;
+}
+
+#account_btn {
+  background-color: transparent;
+  text-align: left;
+  border: 1px solid rgb(175, 172, 172);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 23px;
+}
+
+#account_btn:hover{
+  border-width: 2px;
+  border-color: rgb(12, 144, 180);
+}
